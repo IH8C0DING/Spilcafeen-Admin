@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { AdminLayout } from "./components/AdminLayout";
 import { BoardGamesPage } from "./components/BoardGamesPage";
 import { UsersPage } from "./components/UsersPage";
 import { LoginPage } from "./components/LoginPage";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <LoginPage />,
