@@ -228,7 +228,7 @@ export function BoardGamesPage() {
           ) : filteredGames.map((game) => (
             <div key={game.id} className="bg-card rounded-2xl shadow-sm border overflow-hidden">
               <div className="h-48 bg-secondary/30 flex items-center justify-center">
-                <img src="/images/missing.png" alt="No cover" className="h-24 w-24 object-contain opacity-30" />
+                <img src={`${import.meta.env.BASE_URL}images/missing.png`} alt="No cover" className="h-24 w-24 object-contain opacity-30" />
               </div>
               <div className="p-5">
                 <div className="flex items-start justify-between mb-3">
@@ -262,7 +262,7 @@ export function BoardGamesPage() {
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50" onClick={() => setOverlayGame(null)}>
             <div className="bg-card shadow-xl border w-full max-w-6xl max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
               <div className="h-48 bg-secondary/30 flex items-center justify-center">
-                <img src="/images/missing.png" alt="No cover" className="h-24 w-24 object-contain opacity-30" />
+                <img src={`${import.meta.env.BASE_URL}images/missing.png`} alt="No cover" className="h-24 w-24 object-contain opacity-30" />
               </div>
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">

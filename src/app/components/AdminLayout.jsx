@@ -19,7 +19,7 @@ export function AdminLayout() {
       <header className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/images/logo.png" alt="Spilcaféen" className="h-10 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Spilcaféen" className="h-10 w-auto" />
             <span className="text-xl font-bold">Spilcaféen Admin</span>
           </div>
           <div className="flex items-center gap-4">

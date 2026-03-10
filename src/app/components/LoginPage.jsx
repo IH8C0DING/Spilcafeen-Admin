@@ -11,7 +11,7 @@ export function LoginPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="flex items-center gap-2 justify-center mb-4">
-            <img src="/images/logo.png" alt="Spilcaféen" className="h-10 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Spilcaféen" className="h-10 w-auto" />
             <span className="text-xl font-bold">Spilcaféen Admin</span>
           </div>
         </div>
